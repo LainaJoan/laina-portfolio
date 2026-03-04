@@ -1,196 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laina Jematur Joan</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laina Joan | Portfolio</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-    }
+<link rel="stylesheet" href="style.css">
 
-    /* STICKY HEADER */
-    header {
-      background-color: #266842;
-      color: #e5ffe5;
-      padding: 10px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .container {
-      display: flex;
-      width: 100%;
-    }
-
-    nav {
-      width: 20%;
-      background-color: #afe0af;
-      padding: 20px;
-      min-height: 100vh;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    nav ul li {
-      margin-bottom: 20px;
-    }
-
-    nav a {
-      color: #000;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      width: 80%;
-      padding: 20px;
-      min-height: 100vh;
-    }
-
-    /* Make blog images equal size */
-    #Blogs img {
-      width: 160x;
-      height: 160px;
-      object-fit: cover;
-      margin: 5px;
-      border-radius: 5px;
-    }
-
-    #AboutMe img {
-      border-radius: 5px;
-      margin-right: 20px;
-    }
-
-    footer {
-      background-color: #4a9b6c;
-      color: #080808;
-      padding: 30px;
-      text-align: center;
-    }
-  </style>
-
-  <script>
-    // FUNCTION TO SHOW ONLY ONE SECTION AT A TIME
-    function showSection(sectionId) {
-      const sections = ["AboutMe", "Skills", "Resume", "Blogs", "Contact"];
-
-      sections.forEach(id => {
-        document.getElementById(id).style.display = "none";
-      });
-
-      document.getElementById(sectionId).style.display = "block";
-    }
-
-    // Default: show About Me first
-    window.onload = function() {
-      showSection("AboutMe");
-    };
-  </script>
-
+<script src="https://kit.fontawesome.com/0e75273bfb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
 <header>
-  <h2>Laina Joan Jematur</h2>
-  <i>Geomatics Engineer & Geospatial Data Analyst</i>
-</header>
 
-<div class="container">
+<nav>
+<h2 class="logo">Laina Joan</h2>
 
-  <nav>
-    <ul>
-      <li><a onclick="showSection('AboutMe')">About Me</a></li>
-      <li><a onclick="showSection('Skills')">Skills</a></li>
-      <li><a onclick="showSection('Resume')">Resume</a></li>
-      <li><a onclick="showSection('Blogs')">Blogs</a></li>
-      <li><a onclick="showSection('Contact')">Contact</a></li>
-    </ul>
-  </nav>
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
-  <section>
+</nav>
 
-    <!-- ABOUT ME -->
-    <div id="AboutMe">
-      <p>
-        <img src="ProfilePicture.png" alt="Profile Picture" width="140" height="140" style="float:left;">
-        I am a Geomatics Engineer with experience in GIS, spatial data analysis, mapping technologies,
-        and project coordination. Proficient in Python, R, SQL, and web-based mapping tools for creating
-        practical, data-driven solutions. Experienced in field data collection, urban planning projects,
-        community engagement, and developing interactive geospatial outputs to support decision-making.
-        Skilled in communication, organization, and teamwork.
-      </p>
-    </div>
+<div class="hero">
 
-    <!-- SKILLS -->
-    <div id="Skills">
-      <h3>Skills and Tools</h3>
-      <ul>
-        <li>GIS & Remote Sensing: ArcGIS, QGIS, Erdas Imagine, AutoCAD</li>
-        <li>Land Surveying: RTK, Dumpy Level, Garmin Receivers</li>
-        <li>Data Entry & Data Collection: Excel, Kobo, ODK, Survey123</li>
-        <li>Data Analysis & Visualization: Excel, R, Python, SQL, Tableau, PowerBI</li>
-        <li>Web Mapping & Development: HTML, CSS, JavaScript, Leaflet</li>
-        <li>Soft Skills: Communication, Community Engagement, Teamwork</li>
-        <li>Administration: Report Writing</li>
-      </ul>
-    </div>
+<img src="images/profile.jpg" class="profile">
 
-    <!-- RESUME -->
-    <div id="Resume">
-      <h3>Resume</h3>
-      <a href="Laina_Joan_Resume.pdf" download>Download My CV</a>
-    </div>
+<h1>Geomatics Engineer</h1>
 
-    <!-- BLOGS -->
-    <div id="Blogs">
-      <h3>Blogs</h3>
-      <img src="Lake Bogoria 2023.jpg">
-      <img src="Kinyach.jpg">
-      <img src="Kinyach1.jpg">
-      <img src="LakeBogoria1.jpg">
-      <img src="BurntForest.jpg">
-      <img src="Kericho.jpg">
-      <img src="Kericho2.jpg">
-      <img src="Kericho4.jpg">
-      <img src="Kericho6.jpg">
-      <img src="MoisBridge.jpg">
-      <img src="Zebra.jpg">
-      <img src="Moisbridge2.jpg">
-    </div>
-
-    <!-- CONTACT -->
-    <div id="Contact">
-      <h3>Contact</h3>
-      <p>Email: <a href="mailto:lainajoan975@gmail.com">lainajoan975@gmail.com</a></p>
-      <p>Phone: 0724760480</p>
-      <p>
-        <a href="https://www.linkedin.com/in/lainajoan">LinkedIn</a> |
-        <a href="https://github.com/LainaJoan">GitHub</a>
-      </p>
-    </div>
-
-  </section>
+<p>
+GIS • Spatial Data Analysis • Web Mapping • Data Science
+</p>
 
 </div>
 
+</header>
+
+
+<main>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+Geomatics Engineer experienced in GIS programming,
+spatial analysis, mapping technologies and field data collection.
+I build data-driven geospatial solutions using Python, SQL and web mapping tools.
+</p>
+
+</section>
+
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="project-grid">
+
+<div class="card">
+<h3>NDVI Calculator</h3>
+<p>Satellite vegetation analysis using Python.</p>
+</div>
+
+<div class="card">
+<h3>Coordinate Converter</h3>
+<p>Convert coordinates between map projections.</p>
+</div>
+
+<div class="card">
+<h3>Land Degradation Analysis</h3>
+<p>GIS research project for Baringo County.</p>
+</div>
+
+<div class="card">
+<h3>Web GIS Map</h3>
+<p>Interactive map built with Leaflet.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills-grid">
+
+<div>Python</div>
+<div>SQL</div>
+<div>JavaScript</div>
+<div>QGIS</div>
+<div>ArcGIS</div>
+<div>Remote Sensing</div>
+<div>Data Analysis</div>
+<div>Web Mapping</div>
+
+</div>
+
+</section>
+
+
+<section id="gallery">
+
+<h2>Field Work</h2>
+
+<div class="gallery-grid">
+
+<img src="images/mapping.jpg">
+<img src="images/field.jpg">
+<img src="images/survey.jpg">
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>
+<i class="fa-solid fa-envelope"></i>
+jematurlaina@outlook.com
+</p>
+
+<p>
+<i class="fa-brands fa-github"></i>
+github.com/LainaJoan
+</p>
+
+<p>
+<i class="fa-brands fa-linkedin"></i>
+linkedin.com/in/lainajoan
+</p>
+
+</section>
+
+</main>
+
+
 <footer>
-  All rights reserved © 2025
+
+<p>© 2026 Laina Joan</p>
+
 </footer>
 
 </body>
